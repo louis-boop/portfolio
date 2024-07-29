@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://kit.fontawesome.com/1185d8630b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">My Portfolio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Ayomide Louis</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about"onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section-pic-container">
+            <img class="image" src="./image/2023_03_03_22_42_IMG_0430.JPG" alt="Ayomide Louis profile picture">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello I'm</p>
+            <h1 class="title">Ayomide Louis</h1>
+            <p class="section-text-p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn-color2" onclick="window.open('')">Download CV</button>
+                <button class="btn-color1" onclick="location.href='./#contacts'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+              <a href="http://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-bounce"></i></a>
+                <a href="http://github.com/"  target="_blank"><i class="fa-brands fa-github fa-bounce"></i></a>
+            </div>
+        </div>
+
+    </section>
+    <section id="about">
+        <p class="section-text-p1">Get to know More</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img src="./image/2023_01_01_20_21_IMG_3187.JPG" alt="profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details">
+                        <p class="icon"><i class="fa-solid fa-medal"></i></p>
+                        <h3>Experience</h3>
+                        <p>1 year<br> Frontend Development</p>
+                    </div>
+                    <div class="details">
+                        <p class="icon"><i class="fa-solid fa-school"></i></p>
+                        <h3>Education</h3>
+                        <p>B.Sc Bachelors Degree<br> m.Sc Masters Degree</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Hello!
+                      i'm Ayomide Louis, a Front-end developer with a drive of crafting visually appealing and highly functional web applications. I thrive on turning complex problems into simple and intuitive designs and i work with languages like HTML , CSS ,BOOTSTRAP and JAVASCRIPT. I'm constantly learning everyday because you learn new things everyday in the world of technology. Feel free to browse my Portfolio to see some of the project i've worked on. let's build something amazig together!</p>
+                </div>
+            </div>
+        </div>
+        
+       <a class="arrow" href="#experience"> <i class="fa-solid fa-angles-down"></i></a>
+    </section>
+    <section id="experience">
+        <p class="section-text-p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details">
+                    <h2 class="experience-sub-title">Front-end Development</h2>
+                    <div class="article-container">
+                        <article>
+                           <i class="fa-solid fa-square-check"></i>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                           <i class="fa-solid fa-square-check"></i>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                           <i class="fa-solid fa-square-check"></i>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                           <i class="fa-solid fa-square-check"></i>
+                            <div>
+                                <h3>Bootstrap</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="arrow" href="#projects"> <i class="fa-solid fa-angles-down"></i></a>
+    </section>
+    <section id="projects">
+        <p class="section-text-p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details color">
+                <div class="article-container">
+                    <img src="./image/Project1.jpg" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project 1</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2 project-btn">
+                        <a href="http://127.0.0.1:5501/easybank-landing-page-master/index.html" target="_blank">Click here</a>
+                    </button>
+                    <button class="btn btn-color2 project-btn">
+                        <a href="http://127.0.0.1:5501/easybank-landing-page-master/index.html" target="_blank">Live Demo</a>
+                    </button>
+                </div>
+            </div>
+            <div class="details color">
+                <div class="article-container">
+                    <img src="./image/project3.jpg" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project 2</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2 project-btn">
+                        <a href="http://127.0.0.1:5501/news-homepage-main/index.html" target="_blank">Click here</a>
+                    </button>
+                    <button class="btn btn-color2 project-btn">
+                        <a href="http://127.0.0.1:5501/news-homepage-main/index.html" target="_blank">Live Demo</a>
+                    </button>
+                </div>
+            </div>
+            <div class="details color">
+                <div class="article-container">
+                    <img src="./image/project2.jpg" alt="Project 3" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project 3</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2 project-btn">
+                        <a href="http://127.0.0.1:5501/easybank-landing-page-master/index.html" target="_blank">Click here</a>
+                    </button>
+                    <button class="btn btn-color2 project-btn">
+                        <a href="http://127.0.0.1:5501/easybank-landing-page-master/index.html" target="_blank">Live Demo</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <a class="arrow" href="#projects"> <i class="fa-solid fa-angles-down"></i></a>
+    </section>
+    <section id="contact">
+            <p class="section-text-p1">Get in touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <p class="contact-icon"><i class="fa-regular fa-envelope fa-fade"></i></p>
+                    <p><a href="mailto:Ayomidelouis59@gmail.com" target="_blank">Ayomidelouis59@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <p class="contact-icon"><i class="fa-brands fa-linkedin fa-fade"></i></p>
+                    <p><a href="Http://www.linkedin.com" target="_blank">LinkedIn</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <p class="contact-icon"><i class="fa-brands fa-square-instagram fa-fade"></i></i></p>
+                    <p><a href="http://Instagram.com/yesl0_uis" target="_blank">Instagram</a></p>
+                </div>
+            </div>
+           
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright<i class="fa-regular fa-copyright"></i> 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
